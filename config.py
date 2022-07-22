@@ -11,73 +11,72 @@ class Config:
     STATUS = set(int(x) for x in (S).split())
     L=Instaloader()
     HELP="""
-You can Download almost anything From your Instagram Account.
-
-<b>What Can Be Downloaded?:</b>
-
-1. All posts of any Profile. (Both Public and Private,for private profiles you need to be a follower.)
-2. All Posts from your feed.
-3. Stories of any profile (Both Public and Private,for private profiles you need to be a follower.)
-4. DP of any profile (No need to follow)
-5. Followers and Followees List of any Profile.
-6. List of followees who follows back the given username.
-7. List of followees who are not following back the given username.
-8. Stories of your Followees.
-9. Tagged posts of any profile.
-10. Your saved Posts.
-11. IGTV videos.
-12. Highlights from any profiles.
-13. Any Public Post from Link(Post/Reels/IGTV)
+Anda dapat Mengunduh hampir semua hal Dari Akun Instagram Anda.
+<b>Apa yang Dapat Diunduh?:</b>
 
 
-<b>How to Download:</b>
+ 1. Semua posting dari Profil apa pun.  (Baik Publik dan Pribadi, untuk profil pribadi Anda harus menjadi pengikut.)
+ 2. Semua Postingan dari feed Anda.
+ 3. Cerita dari profil apa pun (Baik Publik maupun Pribadi, untuk profil pribadi Anda harus menjadi pengikut.)
+ 4. DP profil apa saja (Tidak perlu difollow)
+ 5. Daftar Pengikut dan Pengikut dari Profil apa pun.
+ 6. Daftar pengikut yang mengikuti kembali nama pengguna yang diberikan.
+ 7. Daftar pengikut yang tidak mengikuti kembali nama pengguna yang diberikan.
+ 8. Kisah Pengikut Anda.
+ 9. Tagged posting dari profil apapun.
+ 10. Postingan Anda yang disimpan.
+ 11. video IGTV.
+ 12. Sorotan dari profil apa pun.
+ 13. Setiap Postingan Publik dari Tautan (Post/Reels/IGTV)
 
-Its Easy!!
-You Need to login into your account by /login. 
+<b>Bagaimana cara mengunduh:</b>
 
-You have two Options:
+Mudah!!
 
-1. From Username:
+ Anda harus masuk ke akun Anda dengan /login.
+Anda punya dua pilihan:
 
-Just send any instagram username.
+1. Dari Username:
 
-For Example:
+Cukup kirimkan username instagram.
+
+Sebagai Contoh:
 <code>samantharuthprabhuoffl</code>
 <code>subin_p_s_</code>
 <code>_chill_manh_7</code>
 
 
-2. From URL:
+2. Dari URL/Link instagram:
 
-You can also sent a post link to download the post or video.
+Anda juga dapat mengirim tautan posting untuk mengunduh posting atau video.
 
-For Example:
+Sebagai Contoh:
 <code>https://www.instagram.com/p/CL4QbUiLRNW/?utm_medium=copy_link</code>
 <code>https://www.instagram.com/taylorswift/p/CWds7zapgHn/?utm_medium=copy_link</code>
 
 
-<b>Available Commands and Usage</b>
+<b>Perintah dan Penggunaan yang Tersedia</b>
 
-/start - Check wheather bot alive.
-/restart - Restart the bot (If you messed up anything use /restart.)
-/help - Shows this menu.
-/login - Login into your account.
-/logout - Logout of your account.
-/account - Shows the details of logged in account.
+/start - Periksa apakah bot hidup.
+/restart - Mulai ulang bot (Jika Anda mengacaukan apa pun, gunakan /restart.)
+/help - Tampilkan Menu Bantuan.
+/login - Masuk ke akun Anda.
+/logout - Keluar dari akun anda.
+/account - Menunjukkan detail akun yang masuk.
 
-/posts <username> - Download posts of any username. Use /posts to download own posts or <code> /posts <username> </code>for others.
-Example : <code>/posts samantharuthprabhuoffl</code>
+/posts <username> - Unduh posting dari nama pengguna apa pun. Menggunakan /posts untuk mengunduh postingan sendiri atau <code> /posts <username> </code>untuk yang lain.
+Contoh : <code>/posts samantharuthprabhuoffl</code>
 
-/igtv <username> - Download IGTV videos from given username. If no username given, downloads your IGTV.
+/igtv <username> - Unduh video IGTV dari nama pengguna yang diberikan. Jika tidak ada nama pengguna yang diberikan, unduh IGTV Anda.
 
-/feed <number of posts to download> - Downloads posts from your feed.If no number specified all posts from feed will be downloaded.
-Example: <code>/feed 10</code> to download latest 10 posts from feed.
+/feed <number of posts to download> - Mengunduh kiriman dari umpan Anda. Jika tidak ada nomor yang ditentukan, semua kiriman dari umpan akan diunduh.
+Contoh: <code>/feed 10</code> to download latest 10 posts from feed.
 
 /saved <number of posts to download> - Downloads your saved posts. If no number specified all saved posts will be downloaded.
-Example: <code>/saved 10</code> to download latest 10 saved posts.
+Contoh: <code>/saved 10</code> to download latest 10 saved posts.
 
 /followers <username> - Get a list of all followers of given username. If no username given, then your list will be retrieved.
-Example: <code>/followers samantharuthprabhuoffl</code>
+Contoh: <code>/followers samantharuthprabhuoffl</code>
 
 /followees <username> - Get a list of all followees of given username. If no username given, then your list will be retrieved.
 
@@ -89,25 +88,25 @@ Example: <code>/followers samantharuthprabhuoffl</code>
 
 /story <username> - Downloads all stories from given username. If nothing given your stories will be downloaded.
 
-/stories - Downloads all the stories of all your followees.
+/stories - Unduh semua cerita dari semua pengikut Anda.
 
-/highlights <username> - Downloads highlights from given username, If nothing given your highlights will be downloaded.
+/highlights <username> - Unduh sorotan dari nama pengguna yang diberikan, Jika tidak ada sorotan Anda akan diunduh.
 
 
 """
     HOME_TEXT = """
-<b>Helo, [{}](tg://user?id={})
+<b>Hai, [{}](tg://user?id={})
 
-This is a bot of [{}](www.instagram.com/{}) to manage his Instagram account. 
-I can only work for my master [{}](tg://user?id={}).
-But you can Deploy the same bot for your use from the below source code.
+Ini adalah bot [{}](www.instagram.com/{}) untuk mengelola akun Instagram. 
+Saya hanya bisa bekerja untuk pemilik saya [{}](tg://user?id={}).
+Tetapi Anda dapat Menyebarkan bot yang sama untuk Anda gunakan dari kode sumber di bawah ini.
 
-Use /help to know What I can Do?</b>
+Gunakan /help untuk mengetahui apa yang bisa saya lakukan?</b>
 """
     HOME_TEXT_OWNER = """
 <b>Helo, [{}](tg://user?id={})
-I am your assistant to manage your Instagram account.
+Saya asisten Anda untuk mengelola akun Instagram Anda.
 
-Use /help to know what I can do for you.</b>
+Gunakan /help untuk mengetahui apa yang bisa saya lakukan untuk Anda.</b>
 """
 

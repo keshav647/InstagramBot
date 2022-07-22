@@ -69,24 +69,24 @@ Contoh : <code>/posts samantharuthprabhuoffl</code>
 
 /igtv <username> - Unduh video IGTV dari nama pengguna yang diberikan. Jika tidak ada nama pengguna yang diberikan, unduh IGTV Anda.
 
-/feed <number of posts to download> - Mengunduh kiriman dari umpan Anda. Jika tidak ada nomor yang ditentukan, semua kiriman dari umpan akan diunduh.
-Contoh: <code>/feed 10</code> to download latest 10 posts from feed.
+/feed <jumlah postingan yang diunduh> - Mengunduh kiriman dari umpan Anda. Jika tidak ada nomor yang ditentukan, semua kiriman dari umpan akan diunduh.
+Contoh: <code>/feed 10</code> untuk mengunduh 10 posting tersimpan terbaru.
 
-/saved <number of posts to download> - Downloads your saved posts. If no number specified all saved posts will be downloaded.
-Contoh: <code>/saved 10</code> to download latest 10 saved posts.
+/saved <jumlah postingan yang diunduh> - Mendownload posting Anda yang disimpan. Jika tidak ada nomor yang ditentukan, semua posting yang disimpan akan diunduh.
+Contoh: <code>/saved 10</code> untuk mengunduh 10 posting tersimpan terbaru.
 
-/followers <username> - Get a list of all followers of given username. If no username given, then your list will be retrieved.
+/followers <username> - Dapatkan daftar semua pengikut dari nama pengguna yang diberikan. Jika tidak ada nama pengguna yang diberikan, maka daftar Anda akan diambil.
 Contoh: <code>/followers samantharuthprabhuoffl</code>
 
-/followees <username> - Get a list of all followees of given username. If no username given, then your list will be retrieved.
+/followees <username> - Dapatkan daftar semua pengikut dari nama pengguna yang diberikan. Jika tidak ada nama pengguna yang diberikan, maka daftar Anda akan diambil.
 
-/fans <username> - Get a list of of followees who follow back the given username. If no username given, your list will be retrieved.
+/fans <username> - Dapatkan daftar semua pengikut dari nama pengguna yang diberikan. Jika tidak ada nama pengguna yang diberikan, maka daftar Anda akan diambil.
 
-/notfollowing <username> - Get a list of followees who is not following back the given username.
+/notfollowing <username> -  Dapatkan daftar pengikut yang tidak mengikuti kembali nama pengguna yang diberikan.
 
-/tagged <username> - Downloads all posts in which given username is tagged. If nothing given your tagged posts will be downloaded.
+/tagged <username> - Mengunduh semua posting di mana nama pengguna yang diberikan ditandai. Jika tidak ada postingan yang diberi tag Anda akan diunduh.
 
-/story <username> - Downloads all stories from given username. If nothing given your stories will be downloaded.
+/story <username> - Mengunduh semua cerita dari nama pengguna yang diberikan. Jika tidak ada yang diberikan, cerita Anda akan diunduh..
 
 /stories - Unduh semua cerita dari semua pengikut Anda.
 

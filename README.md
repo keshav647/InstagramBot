@@ -63,14 +63,14 @@ Example: /followers samantharuthprabhuoffl
 
 /story <username> - Downloads all stories from given username. If nothing given your stories will be downloaded.
 
-/stories - Downloads all the stories of all your followees.
+/stories - Downloads all the stories of all your followers.
 
 /highlights <username> - Downloads highlights from given username, If nothing given your highlights will be downloaded.
 
 ```
 
 ### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EmiliaTzy/Instagram-Bot)
 
 Watch This [Video](https://youtu.be/aVkmoVPSOYI) Tutorial For Better Understanding.
 

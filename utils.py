@@ -50,7 +50,7 @@ async def download_insta(command, m, dir):
         if output:
             datetime_ist = datetime.now(IST)
             ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
-            msg="CURRENT_STATUS ⚙️ : <code>{}</code>\nLast Updated :<code>{}</code>".format(output.decode("UTF8"), ISTIME)
+            msg="CURRENT_STATUS ⚙️ : <code>{}</code>\nDiupdate terakhir :<code>{}</code>".format(output.decode("UTF8"), ISTIME)
             msg=msg.replace(f'{dir}/', 'DOWNLOADED : ')
             try:
                 await m.edit(msg)
@@ -65,7 +65,7 @@ async def download_insta(command, m, dir):
         if error:
             datetime_ist = datetime.now(IST)
             ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
-            ermsg="ERROR ❌ : <code>{}</code>\nLast Updated : <code>{}</code>".format(error.decode("UTF8"), ISTIME)
+            ermsg="ERROR ❌ : <code>{}</code>\nDiupdate terakhir : <code>{}</code>".format(error.decode("UTF8"), ISTIME)
             try:
                 await m.edit(ermsg)
             except:
@@ -113,9 +113,9 @@ async def upload(m, bot, chat_id, dir):
     totalvideo=len(VDO)
     TOTAL=totalpics+totalvideo+totalgif
     if TOTAL==0:
-        await m.edit("There are nothing to Download.")
+        await m.edit("Tidak ada yang bisa diunduh.")
         return
-    await m.edit("Now Starting Uploading to Telegram...")
+    await m.edit("Sekarang Mulai Mengunggah ke Telegram...")
     await m.pin(disable_notification=False, both_sides=True)
 
 
@@ -129,19 +129,19 @@ async def upload(m, bot, chat_id, dir):
         await bot.send_photo(chat_id=chat_id, photo=pic)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
     if totalvideo==1:
         video=' '.join([str(elem) for elem in VDO])
         await bot.send_video(chat_id=chat_id, video=video)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
     if totalgif==1:
         video=' '.join([str(elem) for elem in GIF])
         await bot.send_video(chat_id=chat_id, video=video)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
     if totalpics >= 2:
         for i in range(0, len(PIC), 10):
             chunk = PIC[i:i + 10]
@@ -156,7 +156,7 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
 
     if totalvideo >= 2:
         for i in range(0, len(VDO), 10):
@@ -172,32 +172,32 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
     if totalgif >= 2:
         for gif in GIF:
             try:
                 await bot.send_video(chat_id=chat_id, video=gif)
                 up+=1
                 rm-=1
-                await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+                await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
             except FloodWait as e:
                 await bot.send_video(chat_id=chat_id, video=gif)
                 up+=1
                 rm-=1
-                await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+                await m.edit(f"Total: {total}\nUnggahan: {up} Sisa untuk diunggah: {rm}")
     await m.unpin()
     await bot.send_message(
         chat_id=chat_id,
-        text=f"Succesfully Uploaded {up} Files to Telegram.\nIf you found me helpfull Join My Updates Channel",
+        text=f"Berhasil menggungah {up} File ke Telegram.\nJika Anda merasa saya terbantu, Bergabunglah dengan Saluran Pembaruan Saya",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-					InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
+					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/tth_kiya98'),
+					InlineKeyboardButton("🤖Channel Game", url="https://t.me/werewolfaindopremier")
 				],
 				[
-					InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-                    InlineKeyboardButton("⚡️Update Channel", url="https://t.me/subin_works")
+					InlineKeyboardButton("🔗Source Code", url="https://github.com/EmiliaTzy/Instagram-Bot"),
+                    InlineKeyboardButton("⚡️Update Channel", url="https://t.me/CatatanAz")
 				]
 			]
 			)
